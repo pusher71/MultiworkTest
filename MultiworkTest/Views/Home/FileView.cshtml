@@ -1,0 +1,14 @@
+﻿@model FileViewData
+@{
+    ViewData["Title"] = "Просмотр файла";
+}
+
+<img src="@Url.Content(Model.Path)" width="128" height="128">
+<p> </p>
+<br />
+
+<img src="@Url.Content(Model.Path)">
+<p> </p>
+<br />
+
+<p>@Model.Description</p>

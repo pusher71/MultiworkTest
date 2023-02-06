@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Загрузка файла";
+}
+
+<form asp-action="AddFile" asp-controller="Home" method="post" enctype="multipart/form-data">
+    <label>Файл:</label>
+    <br />
+    <input type="file" name="uploadedFile" />
+    <br />
+    <label>Описание:</label>
+    <br />
+    <textarea name="description" cols="40" rows="5"></textarea>
+    <br />
+    <input type="submit" value="Отправить" />
+</form>
